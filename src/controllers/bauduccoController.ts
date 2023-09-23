@@ -11,3 +11,16 @@ export function getAllProdutoController(req: Request, res: Response){
     const Produtos = getAllProduto();
     res.json(Produtos);
 }
+
+export function deleteProdutoController(req: Request, res: Response): void{
+    const { id } = req.params;
+    const produtoId = parseInt(id, 10);
+
+    const deleted = deleteProduto(produtoId);
+    if (deleted)  {
+        res.json(deleted);
+    } else {
+        res.status(404).json({message: 'Produto not found'})
+    }
+
+}
