@@ -6,6 +6,7 @@ const router = express.Router();
 router.get('/', getAllProdutoController);
 router.post('/', addProdutoController);
 router.get('/', listarSaboresDeBiscoitos);
+router.delete('/', deleteProdutoController);
 
 export default router;
 
