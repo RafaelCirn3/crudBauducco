@@ -25,7 +25,7 @@ export function deleteProduto(id: number): Produto | undefined {
         const deleteProduto = produtos.splice(index, 1)[0]
         return deleteProduto;
     }
-    
+    return undefined;
 }
 export function updateProduto(id: number, produtoAtualizado: Produto): Produto | undefined {
         const index = produtos.findIndex((produto) => produto.produtoId === id);

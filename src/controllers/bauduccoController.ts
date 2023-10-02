@@ -13,7 +13,7 @@ export function getAllProdutoController(req: Request, res: Response){
 }
 
 export function updateProdutoController(req:Request,res:Response): void{
-    const {id } = req.params;
+    const { id } = req.params;
     const produtoId = parseInt(id,10);
     const produtoAtualizado: Produto = req.body;
     const atualizado = updateProduto(produtoId,produtoAtualizado);
