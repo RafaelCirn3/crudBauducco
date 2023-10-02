@@ -46,10 +46,10 @@ npm run start
 
 ## Endpoints
 
-- `GET /produtos`: Retorna a lista de todos os produtos cadastrados.
-- `POST /produtos`: Cadastra um novo produto.
-- `PUT /produtos/:id`: Atualiza as informações do produto com o ID especificado.
-- `DELETE /produtos/:id`: Remove o produto com o ID especificado.
+- `GET /api/produtos`: Retorna a lista de todos os produtos cadastrados.
+- `POST /api/produtos`: Cadastra um novo produto.
+- `PUT /api/produtos/:id`: Atualiza as informações do produto com o ID especificado.
+- `DELETE /api/produtos/:id`: Remove o produto com o ID especificado.
 
 ## Alunos
 
