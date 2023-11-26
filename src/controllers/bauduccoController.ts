@@ -33,7 +33,7 @@ export function deleteProdutoController(req: Request, res: Response): void{
     if (deleted)  {
         res.json(deleted);
     } else {
-        res.status(404).json({message: 'Produto not found'})
+        res.status(404).json({message: 'Produto não encontrado'})
     }
 
 }

@@ -1,3 +1,19 @@
+import { Schema, model, Document } from "mongoose";
+
+interface ProdutoDocument extends Document{
+
+    produtoNome: string;
+    produtoDescricao: string;
+    produtoPreco: number;
+    
+}
+
+const ProdutoSchema = new Schema<Produto>({
+    produtoNome: {type: String, required: true},
+    produtoDescricao: {type: String, required: true},
+    produtoPreco: {type: Number, required: true},
+});
+
 export interface Produto {
     produtoId: number;
     produtoNome: string;
